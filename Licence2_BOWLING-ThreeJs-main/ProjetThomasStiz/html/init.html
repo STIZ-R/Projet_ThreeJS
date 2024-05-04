@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author"    content="STIZ Romain && THOMAS Allan">
+	<meta name="copyright" content="STIZ Romain && THOMAS Allan">
+	
+	<link href="../graphics/favicon.png" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="../css/init.css">
+	
+	<title>Bowling</title>
+	
+	<script  src="../../libs/three/three.js"></script>
+	<script  src="../../libs/three/controls/TrackballControls.js"></script>
+	<script  src="../../libs/three/controls/OrbitControls.js"></script>
+	<script  src="../../libs/util/dat.gui.js"></script>
+	<script  src="../../libs/util/Stats.js"></script>
+	<script  src="../../libs/util/util.js"></script>
+	<script  src="../js/CameraLumiere.js"></script>
+	<script  src="../js/init.js"></script>
+	<script  src="../js/GeometrieUtile.js"></script>
+	<script  src="../js/materiaux.js"></script>
+	<script  src="../js/bezier.js"></script>
+	<script  src="../js/quilles.js"></script>
+	<script  src="../js/controlsCamera.js"></script>
+
+</head>
+
+<body onload="init()">
+
+	<button onclick="activateBoule()" id="myBtn" title="Lancer la boule">Lancer la boule</button>
+	<button onclick="changePtView()" id="myBtn2" title="Changer la vue">Changer la vue</button>
+	
+	<div id="conteneur">
+		
+		<div id="webgl"></div>
+	
+		<div id="contTab">
+		
+			<h3 id="gagnant">&Eacute;galit&eacute; !</h3>
+			
+			<br>
+			
+			<table id="TableauPoints">
+				<tr>
+					<th class="blank"> Equipe </th>
+					<th class="eq1"> Equipe 1</th>
+					<th class="eq2"> Equipe 2</th>
+				</tr>
+				<tr>
+					<th class="blank"> Tour 1 </th>
+					<td id="tour1J1" class="eq1"> - </td>
+					<td id="tour1J2" class="eq2"> - </td>		
+				</tr>
+				<tr>
+					<th class="blank"> Tour 2 </th>
+					<td id="tour2J1" class="eq1"> - </td>
+					<td id="tour2J2" class="eq2"> - </td>		
+				</tr>
+				<tr>
+					<th class="blank"> Tour 3 </th>
+					<td id="tour3J1" class="eq1"> - </td>
+					<td id="tour3J2" class="eq2"> - </td>		
+				</tr>
+				<tr>
+					<th class="blank"> Tour 4 </th>
+					<td id="tour4J1" class="eq1"> - </td>
+					<td id="tour4J2" class="eq2"> - </td>		
+				</tr>
+				<tr>
+					<th class="blank"> Total </th>
+					<td id="totalJ1" class="eq1"> - </td>
+					<td id="totalJ2" class="eq2"> - </td>	
+				</tr>
+			</table>
+			
+		</div>
+
+	</div>
+	
+</body>
+</html>
